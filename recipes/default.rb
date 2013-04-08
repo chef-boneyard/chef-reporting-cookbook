@@ -16,13 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-node.set['chef_client']['load_gems']['chef_reporting'] = {
-    :version => version,
+node.set['chef_client']['load_gems']['chef-reporting'] = {
+    :require_name => 'chef_reporting',
     :action => :install,
-    # TODO - Remove source when we have it in rubygems
-    :source => "/tmp/chef-reporting-#{version}.gem"
+    :source => node['chef']['reporting']['gem_source'],
+    :version => node['chef']['reporting']['gem_version']
 }
+
 node.set['chef_client']['start_handlers'] = [
     {
         "class" => "Chef::Reporting::StartHandler",
