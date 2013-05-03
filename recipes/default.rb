@@ -19,14 +19,13 @@
 node.set['chef_client']['load_gems']['chef-reporting'] = {
     :require_name => 'chef_reporting',
     :action => :install,
-    :source => node['chef']['reporting']['gem_source'],
     :version => node['chef']['reporting']['gem_version']
 }
 
 node.set['chef_client']['start_handlers'] = [
     {
-        "class" => "Chef::Reporting::StartHandler",
-        "arguments" => []
+        :class => "Chef::Reporting::StartHandler",
+        :arguments => []
     }
 ]
 include_recipe "chef-client::config"
