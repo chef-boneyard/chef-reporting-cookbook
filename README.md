@@ -17,7 +17,7 @@ The `chef-reporting::default` recipe requires the chef-client cookbook
 Attributes
 ==========
 
-* `node["chef"]["reporting"]["gem_version"]` -  the version of the `chef-reporting` gem to install
+* `node['chef-reporting']['gem_version']` -  the version of the `chef-reporting` gem to install
 
 Recipes
 =======
