@@ -19,7 +19,7 @@
 node.set['chef_client']['load_gems']['chef-reporting'] = {
     :require_name => 'chef_reporting',
     :action => :install,
-    :version => node['chef']['reporting']['gem_version']
+    :version => node['chef-reporting']['gem_version']
 }
 
 node.set['chef_client']['start_handlers'] = [
