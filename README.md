@@ -1,13 +1,13 @@
 Description
 ===========
 
-This cookbook is used to configure a system using Chef Client < 11.8.0 to publish reporting
+This cookbook is used to configure a system using Chef Client < 11.6.0 to publish reporting
 data.
 
 Requirements
 ============
 
-A Chef 11 client where the version is < 11.8.0
+A Chef 11 client where the version is < 11.6.0
 
 Opscode Cookbooks
 -----------------

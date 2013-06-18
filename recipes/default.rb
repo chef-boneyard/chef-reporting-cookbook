@@ -22,7 +22,7 @@ node.set['chef_client']['load_gems']['chef-reporting'] = {
     :version => node['chef-reporting']['gem_version']
 }
 
-node.set['chef_client']['start_handlers'] = [
+node.default['chef_client']['config']['start_handlers'] = [
     {
         :class => "Chef::Reporting::StartHandler",
         :arguments => []
