@@ -17,15 +17,15 @@
 # limitations under the License.
 
 node.set['chef_client']['load_gems']['chef-reporting'] = {
-    :require_name => 'chef_reporting',
-    :action => :install,
-    :version => node['chef-reporting']['gem_version']
+  require_name: 'chef_reporting',
+  action: :install,
+  version: node['chef-reporting']['gem_version']
 }
 
 node.default['chef_client']['config']['start_handlers'] = [
-    {
-        :class => "Chef::Reporting::StartHandler",
-        :arguments => []
-    }
+  {
+    class: 'Chef::Reporting::StartHandler',
+    arguments: []
+  }
 ]
-include_recipe "chef-client::config"
+include_recipe 'chef-client::config'
