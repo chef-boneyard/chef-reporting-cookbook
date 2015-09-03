@@ -1,6 +1,10 @@
 Description
 ===========
 
+[![Build Status](https://travis-ci.org/opscode-cookbooks/chef-reporting.svg?branch=master)](https://travis-ci.org/opscode-cookbooks/chef-reporting)
+[![Cookbook Version](https://img.shields.io/cookbook/v/chef-reporting.svg)](https://supermarket.chef.io/cookbooks/chef-reporting)
+
+
 This cookbook is used to configure a system using Chef Client < 11.6.0 to publish reporting
 data.
 
