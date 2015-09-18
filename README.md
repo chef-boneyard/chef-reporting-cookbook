@@ -38,13 +38,13 @@ USAGE
 
 Simple include the `chef-reporting::default` cookbook to add in the backported event handler which publishes reporting data.
 
-License and Author
-==================
+License & Authors
+-----------------
 
-Author:: James Casey (<james@chef.io>)
-```text
-Copyright:: 2013-2015, Chef Software, Inc
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
+**Copyright:** 2013-2015, Chef Software, Inc.
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
