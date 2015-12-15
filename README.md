@@ -1,49 +1,35 @@
-chef-reporting Cookbook
-=======================
+# chef-reporting Cookbook
+[![Build Status](https://travis-ci.org/chef-cookbooks/chef-reporting.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef-reporting) [![Cookbook Version](https://img.shields.io/cookbook/v/chef-reporting.svg)](https://supermarket.chef.io/cookbooks/chef-reporting)
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/chef-reporting.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef-reporting)
-[![Cookbook Version](https://img.shields.io/cookbook/v/chef-reporting.svg)](https://supermarket.chef.io/cookbooks/chef-reporting)
+This cookbook is used to configure a system using Chef Client < 11.6.0 to publish reporting data.
 
+## Requirements
+### Platforms
+- All platforms supported by the chef-client cookbook
 
-This cookbook is used to configure a system using Chef Client < 11.6.0 to publish reporting
-data.
+### Chef
+- Chef < 11.6.0
 
-Requirements
-============
+### Cookbooks
+- chef-client
 
-A Chef 11 client where the version is < 11.6.0
+## Attributes
+- `node['chef-reporting']['gem_version']` -  the version of the `chef-reporting` gem to install
 
-Opscode Cookbooks
------------------
-
-The `chef-reporting::default` recipe requires the chef-client cookbook
-
-Attributes
-==========
-
-* `node['chef-reporting']['gem_version']` -  the version of the `chef-reporting` gem to install
-
-Recipes
-=======
-
+## Recipes
 This section describes the recipes in the cookbook and how to use them in your environment.
 
-default
-------
-
+### default
 Adds the `chef-reporting` start handler to the `chef-client` attributes and runs chef-client configuration.
 
-USAGE
-=====
-
+## Usage
 Simple include the `chef-reporting::default` cookbook to add in the backported event handler which publishes reporting data.
 
-License & Authors
------------------
-
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
+## License & Authors
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
 **Copyright:** 2013-2015, Chef Software, Inc.
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
