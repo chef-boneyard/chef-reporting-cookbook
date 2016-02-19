@@ -3,6 +3,9 @@
 
 This cookbook is used to configure a system using Chef Client < 11.6.0 to publish reporting data.
 
+# DEPRECATION
+As the functionality in this cookbook is only necessary for chef-client releases prior to 11.6.0 this cookbook is deprecated and will receive no additional features or bug fixes.
+
 ## Requirements
 ### Platforms
 - All platforms supported by the chef-client cookbook
