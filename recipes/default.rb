@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-node.set['chef_client']['load_gems']['chef-reporting'] = {
+node.normal['chef_client']['load_gems']['chef-reporting'] = {
   require_name: 'chef_reporting',
   action: :install,
   version: node['chef-reporting']['gem_version']
